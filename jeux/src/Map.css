@@ -1,0 +1,75 @@
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  aspect-ratio: 5 / 3;
+  margin: 0 -20%; /* Centrer la carte */
+}
+
+.map-container>h2 {
+  text-align: right;
+}
+
+.continent {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.continent.hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.africa {
+  top: 41.67%;
+  left: 75%;
+  height: 41.67%;
+}
+
+.asia {
+  top: 12.5%;
+  left: 100%;
+  height: 50%;
+}
+
+.europe {
+  top: 8.33%;
+  left: 80%;
+  height: 33.33%;
+}
+
+.north-america {
+  top: 8.33%;
+  left: 15%;
+  height: 50%;
+}
+
+.south-america {
+  top: 53.33%;
+  left: 16%;
+  height: 50%;
+}
+
+.australia {
+  top: 66.67%;
+  left: 100%;
+  height: auto;
+}
+
+.space {
+  top: 50%;
+}
+/* Media queries pour ajuster la taille et la position sur des écrans plus petits */
+@media (max-width: 768px) {
+  .map-container {
+      width: 90%;
+      height: auto;
+  }
+
+  .continent {
+      transform: scale(0.7);
+  }
+}
+

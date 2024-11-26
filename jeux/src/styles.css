@@ -1,0 +1,11 @@
+.continent {
+  fill: #cccccc;
+  stroke: #000000;
+  stroke-width: 1;
+  cursor: pointer;
+  transition: fill 0.3s;
+}
+
+.continent.hover {
+  fill: #ff0000;
+}

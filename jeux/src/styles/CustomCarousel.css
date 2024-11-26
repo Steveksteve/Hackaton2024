@@ -1,0 +1,85 @@
+
+body {
+  background-color: #000;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #371500;
+  color: #fff;
+  padding: 20px;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+}
+
+.carousel-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.carousel-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.carousel-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.carousel-content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.carousel-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-button {
+  background: none;
+  border: none;
+  color: #00d5ff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.indicator.active {
+  border: 4px solid #00d5ff;
+}
